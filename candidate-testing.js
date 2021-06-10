@@ -26,7 +26,7 @@ let correctAnswer5 = "3";
 
 let questionarray = [question,question2,question3,question4,question5]
 let question4array = [8, 'Orbit', 'Trajectory', 45]
-let ansewerarray = [answer1,answer2,answer3,answer4,answer5]
+let ansewerarray = ["answer1","answer2","answer3","answer4","answer5"]
 
 
 
