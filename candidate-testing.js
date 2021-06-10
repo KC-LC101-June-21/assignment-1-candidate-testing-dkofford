@@ -8,19 +8,37 @@ console.log( "Candidate Name: " + name);
 
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 
-
+/// define all questions 
 let question = "1) Who was the first American woman in space? ";
+let question2 = "2)True or False: 5 Kilometes == 5000 meters?";
+let question3 = "(5 + 3)/2 * 10 = ?";
+let question4 = "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?  ";
+let question5 = "What is the minimum crew size for the ISS? ";
 
-let correctAnswer = "Sally Ride"
-let candidateAnswer = input.question(question);
-console.log("Your Answer :" + candidateAnswer);
-console.log( "Correct Ansewer :" + correctAnswer);
+///define all correct ansewers 
+let correctAnswer = "Sally Ride";
+let correctAnswer2 = "true";
+let correctAnswer3 = 40 ;
+let correctAnswer4 = "Trajectory";
+let correctAnswer5 = "3";
+
+//Define all Arrays 
+
+let questionarray = [question,question2,question3,question4,question5]
+let question4array = [8, 'Orbit', 'Trajectory', 45]
+let ansewerarray = [answer1,answer2,answer3,answer4,answer5]
+
+
+
+
+//let candidateAnswer = input.question(question);
+////console.log("Your Answer :" + candidateAnswer);
+///console.log( "Correct Ansewer :" + correctAnswer)
 
 
 let questions;
 let correctAnswers;
-let candidateAnswers;
-
+let candidateAnser; 
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
