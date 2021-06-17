@@ -35,7 +35,7 @@ function askQuestion() {
   let answer = input.question(questionarray[i])
   ansewerarray.push(answer)
   console.log("Candidate Ansewer: " + answer)
-  console.log( "Correct Ansewer :" + correctanswerarray[i])
+  console.log( "Correct Ansewer : " + correctanswerarray[i])
   console.log(" ")
 if ( ansewerarray[i] == correctanswerarray[i]){
     x = x + 1 
