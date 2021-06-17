@@ -45,7 +45,7 @@ if ( ansewerarray[i] == correctanswerarray[i]){
 }
 //grade the quiz 
 function gradequiz(){
-console.log(">>> Overall Grade: " + ((x/5)*100) + "% (" + x + " of 5 responses correct) <<<" )
+console.log(`>>> Overall Grade: ${((x/5)*100)}% ( ${x} of 5 responses correct) <<<`)
 
 if ( x >= 4 ){ 
   console.log(">>> Status: PASSED <<<")
