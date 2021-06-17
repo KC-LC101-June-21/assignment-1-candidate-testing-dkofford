@@ -25,7 +25,7 @@ let ansewerarray = []
 let x = 0 
 // ask for name 
 function askForName() {
- name = input.question("enter your name:")
+ name = input.question("enter your name: ")
     console.log("Candidate Name: " + name);
 }
 //ask all 5 questions 
