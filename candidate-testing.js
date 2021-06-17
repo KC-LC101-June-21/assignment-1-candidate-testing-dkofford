@@ -53,9 +53,6 @@ if ( x >= 4 ){
 
 
 
-console.log(correctanswerarray)
-console.log(ansewerarray)
-console.log(x)
 
 
 function askForName() {
