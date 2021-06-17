@@ -21,11 +21,12 @@ let correctanswerarray = [correctAnswer,correctAnswer2,correctAnswer3,correctAns
 let question4array = [8, 'Orbit', 'Trajectory', 45]
 let ansewerarray = []
 let x = 0 
-
+// ask for name 
 function askForName() {
  name = input.question("enter your name:")
     console.log("Candidate Name: " + name);
 }
+//ask all 5 questions 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
  for(let i = 0 ; i < questionarray.length ; i++){
@@ -40,6 +41,7 @@ if ( ansewerarray[i] == correctanswerarray[i]){
 }
 
 }
+//grade the quiz 
 function gradequiz(){
 console.log(">>> Overall Grade: " + ((x/5)*100) + "% (" + x + " of 5 responses correct) <<<" )
 
@@ -51,8 +53,8 @@ if ( x >= 4 ){
 }
 function runProgram(){ 
  askForName();
- askQuestion()
- gradequiz()
+ askQuestion();
+ gradequiz();
 }
 runProgram()
 
