@@ -1,6 +1,7 @@
 const input = require('readline-sync');
 
 /// define all questions 
+
 let name 
 let question = "1) Who was the first American woman in space? ";
 let question2 = "2)True or False: 5 Kilometes == 5000 meters?";
@@ -61,13 +62,14 @@ runProgram()
 
 
 
-
-
-
-
-
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
+
+let candidateName 
+let candidateAnswer
+let questions
+let correctAnswers
+let gradeQuiz
 
 module.exports = {
   candidateName: candidateName,
