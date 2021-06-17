@@ -9,6 +9,7 @@ let question3 = "3)(5 + 3)/2 * 10 = ?";
 let question4 = "4)Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?  ";
 let question5 = "5)What is the minimum crew size for the ISS? ";
 
+
 ///define all correct ansewers 
 let correctAnswer = 'Sally Ride';
 let correctAnswer2 = 'true';
