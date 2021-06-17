@@ -16,20 +16,18 @@ let correctAnswer4 = 'Trajectory';
 let correctAnswer5 = '3';
 
 //Define all Arrays 
-
 let questionarray = [question,question2,question3,question4,question5]
 let correctanswerarray = [correctAnswer,correctAnswer2,correctAnswer3,correctAnswer4 ,correctAnswer5]
 let question4array = [8, 'Orbit', 'Trajectory', 45]
 let ansewerarray = []
 let x = 0 
 
-
-/// ask for the name 
-    name = input.question("enter your name:")
+function askForName() {
+ name = input.question("enter your name:")
     console.log("Candidate Name: " + name);
-
-//// ask all questions in a loop 
-
+}
+function askQuestion() {
+  // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
  for(let i = 0 ; i < questionarray.length ; i++){
   let answer = input.question(questionarray[i])
   ansewerarray.push(answer)
@@ -41,49 +39,30 @@ if ( ansewerarray[i] == correctanswerarray[i]){
   }
 }
 
-///// Grade quiz and give feedback 
-
-  console.log(">>> Overall Grade: " + ((x/5)*100) + "% (" + x + " of 5 responses correct) <<<" )
+}
+function gradequiz(){
+console.log(">>> Overall Grade: " + ((x/5)*100) + "% (" + x + " of 5 responses correct) <<<" )
 
 if ( x >= 4 ){ 
   console.log(">>> Status: PASSED <<<")
 } else{
   console.log(">>> Status: FAILED <<<")
 }
-
-
-
-
-
-function askForName() {
- 
- 
 }
-
-function askQuestion() {
-  // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-
-
+function runProgram(){ 
+ askForName();
+ askQuestion()
+ gradequiz()
 }
-
-function gradeQuiz(candidateAnswers) {
-
-  // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
+runProgram()
 
 
-  let grade;
-  
 
-  return grade;
-}
 
-function runProgram() {
-  askForName();
-  // TODO 1.1c: Ask for candidate's name //
-  
-  askQuestion();
-  gradeQuiz(this.candidateAnswers);
-}
+
+
+
+
 
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
