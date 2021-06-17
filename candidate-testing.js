@@ -12,7 +12,7 @@ let question5 = "5)What is the minimum crew size for the ISS? ";
 
 ///define all correct ansewers 
 let correctAnswer = 'Sally Ride';
-let correctAnswer2 = 'true';
+let correctAnswer2 = 'True';
 let correctAnswer3 = '40' ;
 let correctAnswer4 = 'Trajectory';
 let correctAnswer5 = '3';
@@ -66,11 +66,11 @@ runProgram()
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
 
-let candidateName 
-let candidateAnswer
-let questions
-let correctAnswers
-let gradeQuiz
+let candidateName = ''
+let candidateAnswer = ''
+let questions = ''
+let correctAnswers = ''
+let gradeQuiz = ''
 
 module.exports = {
   candidateName: candidateName,
