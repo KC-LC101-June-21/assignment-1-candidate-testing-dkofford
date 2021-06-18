@@ -20,15 +20,15 @@ let correctAnswer5 = '3';
 //Define all Arrays 
 let questionarray = [question,question2,question3,question4,question5]
 let correctanswerarray = [correctAnswer,correctAnswer2,correctAnswer3,correctAnswer4 ,correctAnswer5]
-let question4array = [8, 'Orbit', 'Trajectory', 45]
 let ansewerarray = []
 let x = 0 
+
 // ask for name 
 function askForName() {
  name = input.question("enter your name: ")
     console.log("Candidate Name: " + name);
 }
-//ask all 5 questions 
+//ask all 5 questions in a loop record grade
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
  for(let i = 0 ; i < questionarray.length ; i++){
@@ -37,7 +37,7 @@ function askQuestion() {
   console.log("Candidate Ansewer: " + answer)
   console.log( "Correct Ansewer : " + correctanswerarray[i])
   console.log(" ")
-if ( ansewerarray[i] == correctanswerarray[i]){
+if ( ansewerarray[i].toLowerCase() === correctanswerarray[i].toLowerCase()){
     x = x + 1 
   }
 }
@@ -61,17 +61,9 @@ function runProgram(){
 runProgram()
 
 
-
-
+console.log("                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ")
 // Don't write any code below this line //
 // And don't change these or your program will not run as expected //
-
-let candidateName = ''
-let candidateAnswer = ''
-let questions = ''
-let correctAnswers = ''
-let gradeQuiz = ''
-
 module.exports = {
   candidateName: candidateName,
   question: question,
@@ -82,4 +74,5 @@ module.exports = {
   candidateAnswers: candidateAnswers,
   gradeQuiz: gradeQuiz,
   runProgram: runProgram
-};
+ };
+
